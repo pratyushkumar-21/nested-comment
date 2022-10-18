@@ -30,7 +30,7 @@ const CommentContainer = (props) => {
     if (manageActiveAction && manageActiveAction.id !== comment.id) {
       handleAction(false, false);
     }
-  }, [manageActiveAction]);
+  }, [manageActiveAction, comment.id]);
 
   const handleReply = () => {
     handleAction(!isReplyEnabled, false);

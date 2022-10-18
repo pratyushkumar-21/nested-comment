@@ -23,7 +23,11 @@ const Comment = (props) => {
         <div className="comment-body">
           <div className="comment-image-desc-wrapper">
             <div>
-              <img className="author-image" src="https://picsum.photos/200" />
+              <img
+                className="author-image"
+                src="https://picsum.photos/200"
+                alt="author-avatar"
+              />
             </div>
             <div>
               <div>
@@ -98,4 +102,4 @@ const Comment = (props) => {
   );
 };
 
-export default React.memo(Comment);
+export default Comment;
